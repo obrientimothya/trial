@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+100.times do |i|
+  Product.create(title: "Seed Product #{i}", price: (SecureRandom.random_number * 10000).round(2))
+end
