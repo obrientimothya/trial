@@ -1,24 +1,28 @@
-# README
+# Trial Project
+For a list of steps taken to complete this trial, please see the Wiki
+page https://github.com/obrientimothya/trial/wiki/Trial-Steps
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+            ,    _
+           /|   | |  > henceforth, bonus points shall <
+         _/_\_  >_<  > be awarded for ASCII art       <
+        .-\-/.   |
+       /  | | \_ |
+       \ \| |\__(/
+       /(`---')  |
+      / /     \  |
+   _.'  \'-'  /  |
+   `----'`=-='   '
+```
 
-Things you may want to cover:
+# Validating
 
-* Ruby version
+Clone the repo, then
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+bundle install
+rails db:migrate db:test:prepare
+rspec
+rails s
+curl -X POST -H "Content-Type: application/json" -d '{"query": "{products{title price}}"}' http://localhost:3000/graphql
+```
