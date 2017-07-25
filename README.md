@@ -1,5 +1,5 @@
-# Trial Project
-A GraphQL project, submitted for a programming trial.
+# Trial GraphQL Project
+A GraphQL project, submitted for a Ruby on Rails programming trial.
 > For a list of steps taken to complete this trial, please see the [Trial Steps](https://github.com/obrientimothya/trial/wiki/Trial-Steps) Wiki page.
 ## Project Brief
 From a blank repo, implement a Ruby on Rails GraphQL API (https://github.com/rmosolgo/graphql-ruby) with a single model "product" that has a "title" and "price" attribute. I should be able to query all the products in the table with a GraphQL query like so:
