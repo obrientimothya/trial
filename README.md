@@ -15,7 +15,7 @@ page https://github.com/obrientimothya/trial/wiki/Trial-Steps
    `----'`=-='   '
 ```
 
-# Validating
+# Validation
 
 Clone the repo, then
 
